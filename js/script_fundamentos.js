@@ -35,6 +35,6 @@ num2 = 58
 
 console.log(num2)
 
-num3 = 902
+//num3 = 902
 
 console.log(num3)
