@@ -78,7 +78,7 @@ console.log(`O resto da divisão entre 10 e 2 é: ${10 % 2}`)
 */
 
 //TESTE LÓGICO (SELEÇÃO)
-let idade = 35
+let idade = 14
 
 if(idade >= 18){
     console.log("Maior de idade")
@@ -104,4 +104,38 @@ if(idade < 18){
     console.log(`COM ${idade}, O TEMPO PARA RENOVAÇÃO É DE 5 ANOS `)
 }else{
     console.log(`COM ${idade}, O TEMPO PARA RENOVAÇÃO É DE 3 ANOS `)
+}
+
+//TABELA VERDADE
+/*
+    CONJUNÇÃO -> && E
+    VV V
+    VF F
+    FV F
+    FF F
+
+    DISJUNÇÃO -> || OU
+    VV V
+    VF v
+    FV V
+    FF F
+*/
+
+/**
+ *  AUTORIZAÇÃO DE ACESSO PARA UM AMBIENTE SEJA DO SEGUINTE MODO:
+ *  TER IDADE MAIOR OU IGUAL 18 ANOS E POSSUIR MAIOR OU IGUAL A R$ 1000  
+ */
+
+let valor = 1800
+
+if ((idade >= 18) && (valor >= 1000)){
+    console.log("AUTORIZADO O ACESSO")
+}else{
+    console.log("ACESSO NEGADO")
+}
+
+if ((idade >= 18) || (valor >= 1000)){
+    console.log("AUTORIZADO O ACESSO")
+}else{
+    console.log("ACESSO NEGADO")
 }
